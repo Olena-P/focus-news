@@ -1,0 +1,114 @@
+    .hamburger {
+        padding: 0;
+        border: none;
+        background: none;
+        cursor: pointer;
+
+        & .closeIcon,
+        & .menuIcon {
+            margin-right: 16px;
+            font-size: 30px;
+        }
+    }
+
+    .closeIcon {
+        display: none;
+    }
+
+
+    .menu {
+        display: block;
+        position: fixed;
+        transform: translateX(-1000%);
+        height: 360px;
+        padding-top: 20px;
+        transition: transform 0.2s;
+        top: 70px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99;
+        background: var(--primary-white-color);
+        color: var(--primary-text-color);
+        list-style: none;
+        align-items: center;
+        border: solid 1px var(--gray-color);
+        justify-content: center;
+        text-align: center;
+    }
+
+    .menu-item {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        text-transform: uppercase;
+        margin-top: 10px;
+
+        &:hover {
+            color: var(--accent-color);
+        }
+    }
+
+    .showMenu {
+        transform: translateX(0);
+    }
+
+
+    @media screen and (min-width: 1439px) {
+.header-container div{
+    display: flex;
+}
+
+.hamburger {
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    & .closeIcon,
+    & .menuIcon{
+        margin-right: 16px;
+        font-size: 30px;
+    }
+}
+
+.closeIcon {
+    display: none;
+}
+
+
+.menu {
+    position: fixed;
+    display: flex;
+    transform: translateY(-1000%);
+    height: 70px;
+    transition: transform 0.2s;
+    top: 70px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: var(--primary-white-color);
+    color: var(--primary-text-color);
+    list-style: none;
+    align-items: center;
+    border: solid 1px var(--gray-color);
+    justify-content: center;
+}
+
+.menu-item{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    text-transform: uppercase;
+    padding-right: 30px;
+
+    &:hover{
+        color: var(--accent-color);
+    }
+}
+
+.showMenu {
+    transform: translateY(0);
+}
+}

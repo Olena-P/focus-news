@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="UA">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фокус — больше чем просто новости</title>
+    <meta name="description" content="Главные и свежие новости за сегодня и за последний час. Аналитика, статьи и новости про политику, экономику, авто, технологии, события в мире и Украине от аналитического издания Фокус">
+    <link rel="stylesheet" href="./sass/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div>
+                <div>
+                    <ul class="menu">
+                        <li><a class="menu-item" href="#Политика">Политика</a></li>
+                        <li><a class="menu-item" href="#Украина">Украина</a></li>
+                        <li><a class="menu-item" href="#Политика">Экономика</a></li>
+                        <li><a class="menu-item" href="#Политика">Культура</a></li>
+                        <li><a class="menu-item" href="#Политика">Мнение</a></li>
+                        <li><a class="menu-item" href="#Мир">Рейтинги</a></li>
+                        <li><a class="menu-item" href="#Мир">Длинный фокус</a></li>
+                        <li><a class="menu-item" href="#Мир">Мир</a></li>
+                        <li><a class="menu-item" href="#Украина">Технологии и наука</a></li>
+                        <li><a class="menu-item" href="#Авто">Авто</a></li>
+                    </ul>
+                    <button type="button" aria-label="arrow" class="hamburger">
+                        <i class="menuIcon material-icons">menu</i>
+                        <i class="closeIcon material-icons" style="display: none;">close</i>
+                    </button>
+                </div>
+        
+                <a href="#">
+                    <img class="header-logo" src="./images/logo.webp" alt="Фокус">
+                </a>
+            </div>
+    
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <a href="#">Категории</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Спецтема </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#"> Рейтинги</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Подписка</a>
+                </li>
+            </ul>
+             <button type="button" aria-label="arrow" class="menu-list__hamburger">
+                <svg class="material-icons menu-list__menuIcon" width="20" height="20">
+                    <use xlink:href="./svg/sprite.svg#icon-bottum"></use>
+                </svg>
+                <i class="menu-list__closeIcon material-icons" style="display: none;">close</i>
+            </button>
+            <div>
+                <ul class="lang-list">
+                    <li class="lang-item">
+                        <a class="lang" href="#">
+                            UA
+                        </a>
+                    </li>
+                    <li class="lang-item">
+                        <a  href="./index.html">
+                            RU
+                        </a>
+                    </li>
+                </ul>
+        
+                <div class="search">
+                    <form class="search__container" action="URL">
+                        <label class="search-input" for="text">
+                            <input class="search-input-style" type="text" name="text" id="text" placeholder="text"  pattern="[A-Za-zА-Яа-яЁё]" required="" value="">
+                            <button aria-label="arrow" class="subscribe__btn" type="reset">
+                                <svg width="20" height="20" >
+                                    <use xlink:href="./svg/sprite.svg#icon-Vector"></use>
+                                </svg>
+                            </button>
+                        </label>
+                    </form>
+                     <button type="reset" aria-label="arrow" class="search-button">
+                        <svg class="material-icons search-button__svg" width="20" height="20" >
+                            <use xlink:href="./svg/sprite.svg#icon-Vector"></use>
+                        </svg>
+                        <i class="search-button__svg-closeIcon material-icons" style="display: none;">close</i>
+                </button>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <hero class="hero">
+            <div class="container">
+                <h1>Фокус</h1>
+                <ul class="gallery-hero">
+                    <li class="gallery__item">
+                      <input type="radio" name="select" id="radio" checked>
+                      <div class="item-hugger relative">
+                        <div class="item-hugger__title">Леди в законе. Зачем Зеленскому понадобился особый статус для жены президента</div>
+                        <img class="thumb-image" src="./images/lady1x.webp" alt="lady1x"/>
+                        <label for="radio"></label>
+                      </div>
+                      
+                      <div class="content relative">
+                          <img alt="gallery" src="./images/lady.webp"/>
+                          
+                          <div class="content__info">
+                            <a href="#" class="absolute badge--light">Политика</a>
+                            <h2 class="gallery-title">Леди в законе. Зачем Зеленскому понадобился особый статус для жены президента</h2>
+                        
+                            <p class="gallery-subtitle">Владимир Зеленский загорелся идеей разработки закона о первой леди. Для чего ему это понадобилось, и какие права и обязанности возлагаются на супругу главы государства в Украине </p>
+                          </div>
+                      </div>
+                    </li>
+                    
+                    <li class="gallery__item">
+                      <input type="radio" name="select" id="racer">
+                      <div class="item-hugger relative">
+                        <div class="item-hugger__title">Взрыв на Позняках в Киеве</div>
+                        <img class="thumb-image" src="./images/explosion1x.webp" alt="Взрыв на Позняках в Киеве"/>
+                        <label for="racer"></label>
+                      </div>
+                      
+                      <div class="content relative">
+                          <img alt="gallery" src="./images/explosion2x.webp" class="content__img"/>
+                          <div class="content__info">
+                            <a href="#" class="absolute badge--light">Украина</a>
+                            <h2 class="gallery-title">Взрыв на Позняках в Киеве</h2>
+                          
+                            <p class="gallery-subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus similique, dolorum voluptatum illo quia voluptate expedita temporibus?</p>
+                        </div>
+                      </div>
+                    </li>
+                    
+                    <li class="gallery__item">
+                      <input type="radio" name="select" id="city">
+                      <div class="item-hugger relative">
+                        <div class="item-hugger__title">Потоп на западной Украине</div>
+                        <img class="thumb-image" src="./images/flood1x.webp" alt="Потоп на западной Украине"/>
+                        <label for="city"></label>
+                      </div>
+                      
+                      <div class="content relative">
+                          <img alt="gallery" src="./images/flood.webp" class="content__img"/>
+                          <div class="content__info">
+                            <a href="#" class="absolute badge--light">Украина</a>
+                            <h2 class="gallery-title">Потоп на западной Украине</h2>
+                          
+                            <p class="gallery-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo vero provident cupiditate ad sapiente. Nisi eos culpa illum. Nobis vel vitae. </p>
+                        </div>
+                      </div>
+                    </li>
+                    
+                    <li class="gallery__item">
+                      <input type="radio" name="select" id="electric">
+                      <div class="item-hugger relative">
+                        <div class="item-hugger__title">Цифровая трансформация бизнеса Украины</div>
+                        <img class="thumb-image" src="./images/hero-small-digital.webp" alt="Цифровая трансформация"/>
+                        <label for="electric"></label>
+                      </div>
+                
+                      <div class="content relative">
+                          <img alt="gallery" src="./images/hero-small-digital.webp" class="content__img"/>
+                          <div class="content__info">
+                            <a href="#" class="absolute badge--light">Украина</a>
+                            <h2 class="gallery-title">Цифровая трансформация бизнеса Украины</h2>
+                            <p class="gallery-subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem fugit ipsam delectus sunt voluptatibus rem nostrum enim itaque! </p>
+                          </div>
+                      </div>
+                    </li>
+                </ul>
+                
+                <div class="white-box"></div>
+            </div>
+        </hero>
+
+        <div class="news-block">
+            <div class="container rubrik">
+                <ul class="list">
+                    <li class="list__item">
+                        <article class="card card__height-normal">
+                            <div class="card__preview">
+                                <a href="#" class="card__picture">
+                                    <img height="260" width="300" src="./images/first-section1.webp" alt="Наказание карантином">
+                                </a>
+        
+                                <a class="card__category--absolute badge" href="#">Украина</a>
+                            </div>
+                            
+                            <div class="card__main">
+                                <div class="card__title">
+                                    <a class="card__link" href="#">Наказание карантином. Чем грозит Украине вторая волна борьбы с коронавирусом</a>
+                                </div>
+                                <time class="card__date">15:44</time>
+                            </div>
+                        </article>
+                    </li>
+    
+                    <li class="list__item">
+                        <article class="card card__height-normal">
+                            <div class="card__preview">
+                                <a href="#">
+                                    <a href="" class="card__picture">
+                                        <img height="260" width="300" src="./images/first-section2.webp" alt="Заговоренная связь">
+                                    </a>
+                                </a>
+        
+                                <a href="#"  class="card__category--absolute badge">Технологии и наука</a>
+                            </div>
+    
+                            <div class="card__main">
+                                <a href="#" class="card__link">Заговоренная связь. Все, что известно о 5G и его влиянии на здоровье</a>
+                                <time class="card__date">15:44</time>
+                            </div>
+                        </article>
+                    </li>
+    
+                    <li class="list__item">
+                        <article class="card relative">
+                            <div class="card__preview">
+                                <a href="#" class="card__picture">
+                                    <img width="300" src="./images/first-section3.webp" alt="Рейтинг Фокуса">
+                                </a>
+        
+                                <div class="absolute">
+                                    <a href="#" class="absolute badge--light">Рейтинг</a>
+                                    <p class="hundred">100</p>
+                                    <a href="#" class="card-link--light">Из песни слов не выкинешь. Рейтинг Фокуса: самые успешные звезды шоу-бизнеса</a>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+    
+                    <li class="list__item">
+                        <article class="card card__height-normal">
+                            <div class="card__preview">
+                                <a href="#" class="card__picture">
+                                    <img height="260" width="300" src="./images/first-section4.webp" alt="Сексистский скандал">
+                                </a>
+        
+                                <a href="#"  class="card__category--absolute badge">Политика</a>
+                            </div>
+                            <div class="card__main">
+                                <a href="#" class="card__link">Дубы и сосны. В соцсетях обсуждают сексистский скандал в "Слуге народа"</a>
+                            <time class="card__date">15:44</time>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+
+                <ul class="list">
+                    <li class="list__item">
+                        <article class="card relative">
+                            <div class="card__preview">
+                                <a href="#">
+                                    <img width="300" src="./images/first-section5.webp" alt="Заговоренная связь">
+                                </a>
+        
+                                <a href="#" class="absolute badge--light">Технологии и наука</a>
+                            </div>
+                            <div class="card__main--link absolute">
+                                <a href="#" class="card-link--light">Заговоренная связь. Все, что известно о 5G и его влиянии на здоровье</a>
+                                <time class="card-date--light">15:44</time>
+                            </div>
+                        </article>
+                    </li>
+    
+                    <li class="list__item">
+                        <article class="card card__height-small">
+                            <div class="card__preview">
+                                <a href="#" class="card__picture">
+                                    <img width="300" src="./images/first-section6.webp" alt="Кабмин назначил главой МОН Сергея Шкарлета">
+                                </a>
+        
+                                <a href="#" class="card__category--absolute badge">Политика</a>
+                            </div>
+                            <div class="card__main">
+                                <a href="#" class="card__link">Кабмин назначил главой МОН Сергея Шкарлета в обход Рады</a>
+                                <time class="card__date">15:44</time>
+                            </div>
+                        </article>
+                    </li>
+    
+                    <li class="list__item">
+                        <article class="card card__height-small">
+                            <div class="card__preview">
+                                <a href="#" class="card__picture">
+                                    <a href="" class="card__picture">
+                                        <img width="300" src="./images/first-section7.webp" alt="Денис Малюська — о частных СИЗО">
+                                    </a>
+                                </a>
+        
+                                <a href="#" class="card__category--absolute badge">Технологии и наука</a>
+                            </div>
+                            <div class="card__main">
+                                <a href="#" class="card__link">Агент изменений. Денис Малюська — о частных СИЗО, продаже тюрем и будущем люстрации</a>
+                            <time class="card__date">15:44</time>
+                            </div>
+                        </article>
+                    </li>
+    
+                    <li class="list__item">
+                        <article class="card relative">
+                            <div class="card__preview">
+                                <a href="#" class="card__picture">
+                                    <a href="#" class="card__picture">
+                                        <img width="300" src="./images/first-section8.webp" alt="Выход в люди">
+                                    </a>
+                                </a>
+        
+                                <a href="#" class="absolute badge--light">Политика</a>
+                            </div>
+                            <div class="card__main--link absolute">
+                                <a href="#" class="card-link--light">Выход в люди. Как Шарий диктует информационную повестку дня в Украине</a>
+                                <time class="card-date--light">15:44</time>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="news-block">
+            <article class="banner-scroll container relative">
+                <a href="#" class="banner__scroll--picture">
+                    <img width="1272" src="./images/flood.webp" alt="Потоп на западной Украине">
+                </a>
+                <div class="banner-scroll__content absolute">
+                    <div class="content-info">
+                        <h2 class="section__title--light">Потоп на западной Украине</h2>
+
+                        <a href="#" class="content-info__link">Смотреть все материалы</a>
+                    </div>
+
+                    <div class="content-block">
+                        <ul class="content-block__list">
+                            <li class="content-block__item">
+                                <a href="#" class="content-block__link">Появилось видео затопленного Галича с воздуха</a>
+                                <time class="card-date--light">14:26</time>
+                            </li>
+                            <li class="content-block__item">
+                                <a href="#" class="content-block__link">Ущерб от наводнения на Закарпатье оценили в 125 млн гривен</a>
+                                <time class="card-date--light">17:10</time>
+                            </li>
+                            <li class="content-block__item">
+                                <a href="#" class="content-block__link">Ущерб от наводнения на Закарпатье оценили в 125 млн гривен</a>
+                                <time class="card-date--light">18:06</time>
+                            </li>
+                            <li class="content-block__item">
+                                <a href="#" class="content-block__link">Ущерб от наводнения на Закарпатье оценили в 125 млн гривен</a>
+                                <time class="card-date--light">18:06</time>
+                            </li>
+                            <li class="content-block__item">
+                                <a href="#" class="content-block__link">Ущерб от наводнения на Закарпатье оценили в 125 млн гривен</a>
+                                <time class="card-date--light">18:06</time>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="news-block">
+            <div class="container">
+                <ul class="list">
+                    <li class="list__item  poster relative">
+                        <a href="#" class="poster__background">
+                            <img src="./images/poster-bg.webp" alt="Фон">
+                        </a>
+                        <article>
+                            <div class="poster__content">
+                                <div class="poster__content--description">
+                                    <h2 class="description--title">Как Юлия Тимошенко меня в Египет отправила</h2>
+        
+                                    <p class="description--text">В середине нулевых Киев переживал немыслимый ипотечный бум. Банки выдавали кредиты на десять и двадцать лет.</p>
+                                </div>
+        
+                                <div class="poster__content--author">
+                                    <h2 class="author-name">Алексей Газубей</h2>
+        
+                                    <p class="author-position">Главний редактор <br> focus.ua</p>
+                                </div>
+                            </div>
+        
+                            <a href="#" class="poster__picture">
+                                <img src="./images/hazubay.webp" alt="Алексей Газубе" class="poster__img">
+                            </a>
+                        </article>
+                    </li>
+    
+                    <li class="list__item" >
+                        <article class="card card__height-normal">
+                            <div class="card__preview">
+                               <a href="#" class="card__picture">
+                                    <img width="300" src="./images/tiktok.webp" alt="Счастье за 16 секунд">
+                               </a>
+
+                                <a href="#" class="card__category--absolute badge">Технологии и наука</a>
+                            </div>
+    
+                            <div class="card__main">
+                                <a href="#" class="card__link">Счастье за 16 секунд. В чем секрет популярности TikTok и как соцсеть влияет на психику подростков</a>
+    
+                                <time class="card__date">15:44</time>
+                            </div>
+                        </article>
+                    </li>
+    
+                    <li class="list__item" >
+                        <article class="card-black">
+                            <a href="#" class="card-black__category">Мнение</a>
+                            <a class="card__quotes">
+                                <img src="./images/quotes.webp" alt="quotes" width="27">
+                            </a>
+                            <p class="card-black__link">“Too much против me too. Почему сексистские скандалы в Украине ничем не заканчиваются”</p>
+                            <a class="person__picture">
+                                <img width="30" src="./images/babenko.webp" alt="Мария Бабенко">
+                            </a>
+                            <p class="person__name">Мария Бабенко</p>
+                        </article>
+                    </li>
+                </ul>
+    
+                <ul class="list">
+                    <li class="list__item">
+                        <article class="card card__height-small">
+                            <div class="card__preview">
+                                <a href="#" class="card__picture">
+                                    <img width="300" src="./images/technology.webp" alt="Новая нефть">
+                                </a>
+                                <a href="#" class="card__category--absolute badge">Технологии и наука</a>
+                            </div>
+                            <div class="card__main">
+                                <a href="#" class="card__link">Новая нефть. Как ученые ищут редкие элементы на дне океана, в космосе и мусоре</a>
+                            <time class="card__date">15:44</time>
+                            </div>
+                        </article>
+                    </li>
+    
+                    <li class="list__item">
+                        <article class="card card__height-small">
+                            <a href="#" class="badge-top">Технологии и наука</a>
+                            <a href="#" class="card__link">Все в масках и проверка температуры: в Украине стартовала основная сессия ВНО-2020</a>
+                            <p class="description--text">Первый тест – по математике. Для его прохождения зарегистрировались 186 072 человека. </p>
+                            <time class="card__date">15:44</time>
+                        </article>
+                    </li>
+                    
+                    <li class="list__item">
+                        <article class="reclame">
+                            <a href="#" class="card__picture ">
+                                <img width="300" src="./images/zamorozka.webp" alt="zamorozka">
+                            </a>
+                        </article>
+                    </li>
+    
+                    <li class="list__item">
+                        <article class="card card__height-small">
+                            <div class="card__preview">
+                                <a href="" class="card__picture">
+                                    <img width="300" src="./images/books.webp" alt="Обзор Юрия Володарского">
+                                </a>
+                                <a href="#" class="card__category--absolute badge">Культура</a>
+                            </div>
+    
+                            <div class="card__main">
+                                <a href="#" class="card__link">Обзор Юрия Володарского: 5 книг для тех, кто предпочитает "короткий метр" в литературе</a>
+                                <time class="card__date">15:44</time>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="news-block">
+            <div class="container subscribe">
+                <ul class="subscribe__list">
+                    <li class="subscribe__item">
+                        <a href="#" class="card__picture">
+                            <img width="85" src="./images/focus1.webp" alt="Фокус">
+                        </a>
+                    </li>
+                    <li class="subscribe__item">
+                        <a href="#" class="card__picture">
+                            <img width="106" src="./images/focus2.webp" alt="Фокус">
+                        </a>
+                    </li>
+                    <li class="subscribe__item">
+                        <a href="#" class="card__picture">
+                            <img width="85" src="./images/focus3.webp" alt="Фокус">
+                        </a>
+                    </li>
+                    <li class="subscribe__item">
+                        <a href="#" class="card__picture">
+                            <img width="106" src="./images/focus4.webp" alt="Фокус">
+                        </a>
+                    </li>
+                    <li class="subscribe__item">
+                        <a href="#" class="card__picture">
+                            <img width="85" src="./images/focus5.webp" alt="Фокус">
+                        </a>
+                    </li>
+                </ul>
+    
+                <div class="subscribe__content">
+                    <div>
+                        <h3 class="subscribe__title">Подпишись с другом!</h3>
+                        <p class="subscribe__subtitle"><span>-10%</span> каждому</p>
+                    </div>
+        
+                    <button type="button" class="subscribe__button">Подписаться</button>
+                </div>
+            </div>
+        </div>
+
+       <section class="section"> 
+            <div class="container">
+                <h2 class="section__title">Рейтинги</h2>
+            </div>
+            <div id="carousel" class="carousel">
+                <button type="button" aria-label="arrow prev" class="carousel-button arrow prev">
+                    <svg>
+                        <use xlink:href="./svg/sprite.svg#icon-nav"></use>
+                    </svg> 
+                </button>          
+                <div class="gallery">
+                    <ul class="carousel-list">
+                        <li class="carousel-item">
+                            <article class="card-rating">
+                                <a href="#">
+                                    <img width="408" src="./images/rating2019.webp" alt="Самые влиятельные украинцы">
+                                </a>
+                                <div class="card-text">
+                                    <p>Рейтинг</p>
+                                    <span>100</span>
+                                <h3 class="card-text__white"> <p>Рейтинг 2019</p> Самые влиятельные украинцы</h3>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="carousel-item">
+                            <article class="card-rating">
+                                <a href="#">
+                                    <img class="carousel-item__photo" width="322" src="./images/30best-employers.webp" alt="Бунт кнопок">
+                                </a>
+                                <div class="card-text">
+                                    <p class="card-text__rubric">Рейтинг</p>
+                                    <h3 class="card-text__black">Бунт кнопок. 30 лучших работодателей Украины — рейтинг Фокуса</h3>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="carousel-item">
+                            <article class="card-rating">
+                                <div class="card-text black">
+                                    <p>Рейтинг</p>
+                                    <span>100</span>
+                                    <h3 class="card-text__white">Самые богатые люди Украины. Полный список</h3>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="carousel-item">
+                            <article class="card-rating">
+                                <a href="#">
+                                    <img class="carousel-item__photo" width="322" src="./images/30best-employers.webp" alt="Бунт кнопок">
+                                </a>
+                                <div class="card-text">
+                                    <p class="card-text__rubric">Рейтинг</p>
+                                    <h3 class="card-text__black">Бунт кнопок. 30 лучших работодателей Украины — рейтинг Фокуса</h3>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="carousel-item">
+                            <article class="card-rating">
+                                <div class="card-text black">
+                                    <p>Рейтинг</p>
+                                    <span>100</span>
+                                    <h3 class="card-text__white">Самые богатые люди Украины. Полный список</h3>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="carousel-item">
+                            <article class="card-rating">
+                                <a href="#">
+                                    <img class="carousel-item__photo" width="322" src="./images/30best-employers.webp" alt="Бунт кнопок">
+                                </a>
+                                <div class="card-text">
+                                    <p class="card-text__rubric">Рейтинг</p>
+                                    <h3 class="card-text__black">Бунт кнопок. 30 лучших работодателей Украины — рейтинг Фокуса</h3>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="carousel-item">
+                            <article class="card-rating">
+                                <div class="card-text black">
+                                    <p>Рейтинг</p>
+                                    <span>100</span>
+                                    <h3 class="card-text__white">Самые богатые люди Украины. Полный список</h3>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" aria-label="arrow next" class="carousel-button arrow next">
+                    <svg>
+                        <use xlink:href="./svg/sprite.svg#icon-nav"></use>
+                    </svg> 
+                </button>  
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section__title">Украина</h2>
+
+                <ul class="list">
+                    <li class="list__item">
+                        <article class="card card__height-normal">
+                            <div class="card__preview">
+                                <a href="#" class="card__picture">
+                                    <img width="300" src="./images/fraud.webp" alt="Проверка доверия:">
+                                </a>
+
+                                <a href="#" class="card__category--absolute badge">Украина</a>
+                            </div>
+                            <div class="card__main">
+                                <a href="#" class="card__link">Проверка доверия: владелец «Три Н» Максим Криппа о махинациях в благотворительности</a>
+                                <time class="card__date">15:44</time>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="list__item">
+                        <article class="card card__height-normal">
+                            <div class="card__preview">
+                                <a href="#" class="card__picture">
+                                    <img width="300" src="./images/uk2.webp" alt="Выход из карантина">
+                                </a>
+                                <a href="#" class="card__category--absolute badge">Украина</a>
+                            </div>
+                            <div class="card__main">
+                                <a href="#" class="card__link">Выход из карантина: Кабмин разрешил открыть кинотеатры со 2 июля</a>
+                            <time class="card__date">15:44</time>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="card-photo-day relative">
+                            <div class="card__preview">
+                                <a href="#" class="card__picture">
+                                    <img src="./images/uk3.webp" alt="Grand Hotel Lviv Luxury & SPA" class="photo-day-img">
+                                </a>
+                                <a href="#" class="card-photo-day__absolute badge--light">Фото дня</a>
+                            </div>
+                            <div class="card__main absolute">
+                                <a href="#" class="card-photo-day__link">Бизнес и немного удовольствия: <br> Grand Hotel Lviv Luxury & SPA</a>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="list__item">
+                        <article class="card card__height-normal">
+                            <div class="card__preview">
+                                <a href="#" class="card__picture">
+                                    <img width="300" src="./images/uk4.webp" alt="Истории мигрантов">
+                                </a>
+                                <a href="#" class="card__category--absolute badge">Украина</a>
+                            </div>
+                            <div class="card__main">
+                                <a href="#" class="card__link">Пора домой. Истории мигрантов, которые вернулись в Украину из ОАЭ, Китая и Польши</a>
+                                <time class="card__date">15:44</time>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="list__item">
+                        <article class="card-black">
+                            <a href="#" class="card-black__category">Мнение</a>
+                            <picture class="card__quotes">
+                                <source media="" srcset="" >
+                                <img src="./images/quotes.webp" alt="quotes" width="27">
+                            </picture>
+                            <p class="card-black__link">“Государство или смерть. Какой кризис станет для Украины последним”</p>
+                            <picture class="person__picture">
+                                <source media="" srcset="" >
+                                <img src="./images/crisis.webp" alt="Михаил Багинский" width="30">
+                            </picture>
+                            <p class="person__name">Михаил Багинский</p>
+                        </article>
+                    </li>
+                    <li class="list__item">
+                        <article class="card card__height-normal">
+                            <div class="card__preview">
+                                <a href="#" class="card__picture">
+                                    <img width="300" src="./images/uk7.webp" alt="Бетонная пята">
+                                </a>
+                                <a href="#" class="card__category--absolute badge">Украина</a>
+                            </div>
+                            <div class="card__main">
+                                <a href="#" class="card__link">Бетонная пята. Как застройщики превращают украинские города в ад</a>
+                            <time class="card__date">15:44</time>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="list__item">
+                        <article class="card card__height-normal">
+                            <div class="card__preview">
+                                <a href="#" class="card__picture">
+                                    <img width="300" src="./images/uk8.webp" alt="Смерть марафонца">
+                                </a>
+                                <a href="#" class="card__category--absolute badge">Украина</a>
+                            </div>
+                            <div class="card__main">
+                                <a href="#" class="card__link">Смерть марафонца. Можно ли было спасти Екатерину Катющеву</a>
+                                <time class="card__date">15:44</time>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section__title">Сейчас популярно</h2>
+            </div>
+
+            <div id="popular" class="popular-carousel ">
+                <button type="button" aria-label="arrow prev" class="popular-carousel-button carousel-button arrow prev">
+                    <svg>
+                        <use xlink:href="./svg/sprite.svg#icon-nav"></use>
+                    </svg> 
+                </button> 
+               <div class="gallery">
+                    <ul class="popular__list">
+                    <li class="list__item">
+                        <article class="popular__card relative">
+                            <div class="card__preview">
+                                <a href="#" class="card__picture">
+                                    <img width="300" src="./images/now1.webp" alt="Жертвы собственной пропаганды">
+                                </a>
+                                <a href="#" class="absolute badge--light">Протесты в США</a>
+                            </div>
+                            <div class="card__main--link absolute">
+                                <a href="#" class="card-link--light">Жертвы собственной пропаганды. Как либеральные могут проиграть холодную войну</a>
+                                <time class="card-date--light">15:44</time>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="list__item">
+                        <article class="card-black--popular relative">
+                            <a href="#" class="absolute badge--light">Мир</a>
+                            <div class="card__main--link absolute">
+                                <a href="#" class="card-link--light">Австралиец выловил рекордного красного императора и решил передать его ученым</a>
+                            <time class="card-date--light">15:44</time>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="list__item">
+                        <article class="card-white--popular relative">
+                            <a href="#" class="badge-top--popular">Мир</a>
+                            <div class="card__main--link absolute">
+                                <a href="#" class="popular-link">Жизнь за 80. 5 самых пожилых рекорсменов из Книги рекордов Гиннеса</a>
+                                <time class="card__date">15:44</time>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="list__item">
+                        <article class="card relative">
+                            <div class="card__preview">
+                                <a href="#" class="card__picture">
+                                    <img width="300" src="./images/now4.webp" alt="Дресс-код постапокалипсиса">
+                                </a>
+                                <a href="#" class="card__category absolute badge--light">Мир</a>
+                            </div>
+                            <div class="card__main--link absolute">
+                                <a href="#" class="card-link--light">Дресс-код постапокалипсиса. Как коронавирус и карантин навсегда изменили стиль</a>
+                            <time class="card-date--light">15:44</time>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="list__item">
+                        <article class="card-black--popular relative">
+                            <a href="#" class="absolute badge--light">Мир</a>
+                            <div class="card__main--link absolute">
+                                <a href="#" class="card-link--light">Австралиец выловил рекордного красного императора и решил передать его ученым</a>
+                            <time class="card-date--light">15:44</time>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+               </div>
+                <button type="button" aria-label="arrow next" class=" popular-carousel-button  carousel-button arrow next">
+                    <svg>
+                        <use xlink:href="./svg/sprite.svg#icon-nav"></use>
+                    </svg> 
+                </button>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section__title">Красивая страна</h2>
+
+                <ul class="list">
+                    <li class="list__item">
+                        <article class="card card__height-normal">
+                            <div class="card__preview">
+                                <a href="#" class="card__picture">
+                                    <img width="300" src="./images/country1.webp" alt="Наказание карантином">
+                                </a>
+                                <a href="#" class="card__category--absolute badge">Украина</a>
+                            </div>
+                            <div class="card__main">
+                                <a href="#" class="card__link">Наказание карантином. Чем грозит Украине вторая волна борьбы с коронавирусом</a>
+                                <time class="card__date">15:44</time>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="list__item">
+                        <article class="card card__height-normal">
+                            <div class="card__preview">
+                                <a href="#" class="card__picture">
+                                    <img width="300" src="./images/country2.webp" alt="Небоскребы советских времен">
+                                </a>
+                                <a href="#" class="card__category--absolute badge">Украина</a>
+                            </div>
+                            <div class="card__main">
+                                <a href="#" class="card__link">Небоскребы советских времен. Три маршрута к памятникам советского модернизма в Киеве
+                                </a>
+                                <time class="card__date">12 июня 2020 о 03:11</time>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="list__item">
+                        <article class="card relative">
+                            <a href="#">
+                                <a href="#" class="card__picture">
+                                    <img width="300" src="./images/first-section3.webp" alt="Рейтинг Фокуса">
+                                </a>
+                            </a>
+                            <a href="#" class="absolute badge--light">Украина</a>
+                            <div class="absolute">
+                                <p class="hundred">100</p>
+                                <a href="#" class="card-link--light">Из песни слов не выкинешь. Рейтинг Фокуса: самые успешные звезды шоу-бизнеса</a>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="list__item">
+                        <article class="card card__height-normal">
+                            <div class="card__preview">
+                                <a href="#" class="card__picture">
+                                    <img width="300" src="./images/country4.webp" alt="Как закалилась сталь">
+                                </a>
+                                <a href="#" class="card__category--absolute badge">Украина</a>
+                            </div>
+                            <div class="card__main">
+                                <a href="#" class="card__link">Как закалилась сталь. Музей Островского в Шепетовке — памятник архитектуры, а не идеологии</a>
+                                <time class="card__date">12 июня 2020 о 03:11</time>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+
+                <div class="container">
+                    <div class="slider">
+                        <input type="radio" id="slider-1" name="slider[]" checked>
+                        <input type="radio" id="slider-2" name="slider[]">
+                        <input type="radio" id="slider-3" name="slider[]">
+                        <ul class="slider__items">
+                            <li class="slider__item">
+                                <article>
+                                    <a href="#">
+                                        <img width="1272" src="./images/long-focus.webp" alt="Почему украинки участвуют в боях без правиre">
+                                    </a>
+                                    <div class="absolute">
+                                        <a href="#" class="absolute badge--light">Длинный фокус</a>
+                
+                                        <div class="slide-info">
+                                            <h2 class="slide-info__title">Ни тоски, ни жалости</h2>
+                    
+                                            <p class="slide-info__subtitle">Почему украинки участвуют в боях без правил</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="slider__item">
+                                <article>
+                                    <a href="#">
+                                        <img width="1272" src="./images/technology.webp" alt="Necessitatibus, earum?">
+                                    </a>
+                                    <div class="absolute">
+                                        <a href="#" class="absolute badge--light">Длинный фокус</a>
+                
+                                        <div class="slide-info">
+                                            <h2 class="slide-info__title">Necessitatibus, earum?</h2>
+                    
+                                            <p class="slide-info__subtitle">Vel, excepturi. Ratione veritatis iusto facilis. </p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="slider__item">
+                                <article>
+                                    <a href="#">
+                                        <img width="1272" src="./images/uk3.webp" alt="Lorem ipsum dolor">
+                                    </a>
+                                    <div class="absolute">
+                                        <a href="#" class="absolute badge--light">Длинный фокус</a>
+                
+                                        <div class="slide-info">
+                                            <h2 class="slide-info__title">Lorem ipsum dolor</h2>
+                    
+                                            <p class="slide-info__subtitle">Doloremque quo deserunt accusantium nihil.</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                    <div class="slider__prev">
+                        <label for="slider-1"></label>
+                        <label for="slider-2"></label>
+                        <label for="slider-3"></label>
+                    </div>
+                    <div class="slider__next">
+                        <label for="slider-1"></label>
+                        <label for="slider-2"></label>
+                        <label for="slider-3"></label>
+                    </div>
+                </div>
+                </div>
+
+                <ul class="list">
+                    <li class="list__item">
+                        <article class="card card__height-small">
+                            <div class="card__preview">
+                                <a href="#" class="card__picture">
+                                    <img width="300" src="./images/last1.webp" alt="Финал Кубка Украины">
+                                </a>
+                                <a href="#" class="card__category--absolute badge">Спорт</a>
+                            </div>
+                            <div class="card__main">
+                                <a href="#" class="card__link">Финал Кубка Украины по футболу перенесут из Львова в Харьков, – СМИ</a>
+                                <time class="card__date">15:44</time>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="list__item">
+                        <article class="card card__height-small">
+                            <a href="#" class="badge-top">Коронавирус в Украине</a>
+
+                            <a href="#" class="card__link">Это винтажная атмосфера. MONATIK — о том, что такое карантин с оптимистической точки зрения</a>
+                            <p class="description--text">Коронавирус перевел всех в осадное положение. Пока концертные залы пусты, выступления проходят в режиме онлайн или не проходят вообще.</p>
+                            <time class="card__date">15:44</time>
+                        </article>
+                    </li>
+                    <li class="list__item">
+                        <article class="card card__height-small">
+                            <div class="card__preview">
+                                <a href="" class="card__picture">
+                                    <img width="300" src="./images/books.webp" alt="Обзор Юрия Володарского">
+                                </a>
+                                <a href="#" class="card__category--absolute badge">Культура</a>
+                            </div>
+                            <div class="card__main">
+                                <a href="#" class="card__link">Обзор Юрия Володарского: 5 книг для тех, кто предпочитает "короткий метр" в литературе</a>
+                            <time class="card__date">15:44</time>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="list__item">
+                        <article class="card">
+                            <a href="#" class="card__picture">
+                                <source media="" srcset="" >
+                                <img width="300" src="./images/last4.webp" alt="Украина">
+                            </a>
+                        </article>
+                    </li>
+                    <li class="list__item">
+                        <article class="card card__height-small">
+                            <div class="card__preview">
+                                <a href="#" class="card__picture">
+                                    <img width="300" src="./images/last5.webp" alt=">Вдохновленные ностальгией">
+                                </a>
+                                <a href="#" class="card__category--absolute badge">Авто</a>
+                            </div>
+                            <div class="card__main">
+                                <a href="#" class="card__link">Вдохновленные ностальгией. 3 лимитированные серии автомобилей, посвященные славному прошлому</a>
+                            <time class="card__date">15:44</time>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="list__item">
+                        <article class="reclame">
+                            <a href="#" class="card__picture">
+                                <source media="" srcset="" >
+                                <img width="300" src="./images/last6.webp" alt="Украина">
+                            </a>
+                        </article>
+                    </li>
+                    <li class="list__item">
+                        <article class="card relative">
+                            <div>
+                                <a href="#" class="card__preview">
+                                    <img width="300" src="./images/last7.webp" alt="КОГДА ТЫ ДОМА">
+                                </a>
+                            </div>
+                            <div class="card__main absolute">
+                                <a href="#" class="absolute badge--light">Длинный фокус</a>
+                                <div class="card__main--link">
+                                    <a href="#" class="card-link--light">КОГДА ТЫ ДОМА: как «умный дом» LG приходит на выручку во времена турбулентности</a>
+                                    <time class="card-date--light">15:44</time>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="list__item">
+                        <article class="card card__height-small">
+                            <a href="#" class="badge-top" >Архивариус</a>
+
+                            <a href="#" class="card__link">Мосты всей жизни. В жизни Евгения Патона не было случайностей</a>
+
+                            <p class="description--text">Его называли человеком из будущего, гениальные идеи которого по сей день используются при изготовлении сверхпрочных сплавов для мостов, железных дорог и даже космических станций.</p>
+
+                            <time class="card__date">15:44</time>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container banner">
+                <a class="card__picture">
+                    <img src="./images/banner.webp" alt="banner" class="banner-img">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <img class="footer-logo" src="./images/logo.webp" alt="ФОКУС">
+
+            <div class="footer__content">
+                <ul class="footer__menu">
+                    <li class="footer__menu-item">
+                        <a href="#">Политика</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="#">Украина</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="#">Экономика</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="#">Культура</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="#">Мнение</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="#">Рейтинги</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="#">Длинный фокус</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="#">Мир</a>
+                    </li>
+                </ul>
+
+                <div class="footer__subscribe">
+                    <ul class="footer__subscribe-list">
+                        <li>
+                            <a href="#">
+                                <img width="105" src="./images/footer1.webp" alt="Фокус">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img width="96" src="./images/footer2.webp" alt="Фокус">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img width="105" src="./images/footer3.webp" alt="Фокус">
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="footer__subscribe-content">
+                        <p class="footer__subscribe-text">Гарантировано <br> получите скидку  <span>-10%</span></p>
+                        <a href="#">
+                            <button type="button" class="footer__subscribe-button">
+                                Подписаться
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="footer__row">
+                    <div class="footer__row--text">
+                        <p>
+                            Все права на материалы, опубликованные на данном ресурсе, принадлежат ООО "ФОКУС МЕДИА". Какое-либо использование материалов без письменного разрешения ООО "ФОКУС МЕДИА" - запрещено. При использовании материалов с данного ресурса гиперссылка focus.ua обязательна.
+                        </p>
+
+                        <p>
+                            Данный ресурс — для пользователей возрастом от 18 лет и старше.
+                        </p>
+                    </div>
+
+                    <div class="footer__row-col footer__row--text">
+                        <p>
+                            Перепечатка, копирование или воспроизведение информации, содержащей ссылку на агентство ИнА "Українські Новини", в каком-либо виде строго запрещены.
+                        </p>
+
+                        <p>
+                            Все материалы, которые размещены на этом сайте со ссылкой на агентство "Интерфакс-Украина", не подлежат дальнейшему воспроизведению и/или распространению в любой форме, кроме как с письменного разрешения агентства.
+                        </p>
+                        
+                        <p>
+                            Материалы с плашками "Р", "Новости партнеров", "Новости компаний", "Новости партий", "Инновации", "Позиция", "Спецпроект при поддержке" публикуются на коммерческой основе.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footer__row footer__row--copyright">
+                    <p class="footer__row-col">© 2020 Фокус. Все права защищены.</p>
+
+                    <p class="footer__row-col">Политика конфиденциальности</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/burger.js" ></script>
+    <script src="./js/menu-buttom.js" ></script>
+    <script src="./js/search.js" ></script>
+    <script src="./js/rating.js" ></script>
+    <script src="./js/popular.js" ></script>
+</body>
+</html>

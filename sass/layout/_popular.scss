@@ -1,0 +1,118 @@
+.popular-carousel{
+    display: flex;
+    width: 1390px;
+    margin: 0 auto;
+
+    & .gallery{
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.popular-carousel-button svg{
+    width: 24px;
+    height: 47px;
+    background-color: transparent;
+    border: none;
+}
+
+.popular-carousel-button{
+    background-color: transparent;
+    border: none;
+}
+
+.popular__list{
+    display: flex;
+
+    & .list__item {
+        margin-right: 25px;
+
+        &:last-child{
+            margin-right: 0px;
+        }
+    }
+
+    & .card {
+        width: 300px;
+        border-bottom: 1px solid var(--gray-color);
+        margin-top: 0px;
+    }
+}
+
+.card-black--popular{
+    display: block;
+    align-items: center;
+    background-color: var(--primary-text-color);
+    width: 300px;
+    height: 295px;
+}
+
+.card-white--popular{
+    display: block;
+    align-items: center;
+    background-color: var(--primary-white-color);
+    width: 300px;
+    height: 295px;
+    padding-top: 20px;
+}
+
+.badge-top--popular {
+    display: inline;
+    padding: 4px 15px;
+    background-color: #000;
+    color: var(--primary-white-color);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+
+    margin-left: 15px;
+}
+
+.popular-link{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+    margin-bottom: 90px;
+}
+
+@media screen and (max-width: 767px) {
+    .popular-carousel {
+        width: 320px;
+
+        & .gallery {
+            width: 320px;
+        }
+    }
+
+    .popular-carousel-button {
+        display: none;
+    }
+
+    .popular__list {
+        transition: margin-left 500ms;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+
+        & .list__item {
+            margin-right: 10px;
+            scroll-snap-align: start;
+
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+    .popular-carousel {
+        width: 768px;
+        margin: 0 auto;
+
+        & .gallery {
+            width: 768px;
+        }
+    }
+}

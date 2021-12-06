@@ -1,0 +1,264 @@
+.carousel {
+    position: relative;
+    width: 1394px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.gallery {
+    max-width: 1224px;
+    overflow: hidden;
+    margin: 0 24px;
+}
+
+.carousel svg {
+    width: 24px;
+    height: 47px;
+
+}
+
+.carousel-button {
+    width: 61px;
+    border: none;
+    background-color: transparent;
+    &.prev {
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+
+    &:hover,
+    &:focus {
+        background: rgba(6, 6, 6, 0.5);
+        outline: none;
+    }
+}
+
+.carousel h2 {
+    margin-left: 24px;
+    margin-top: 51px;
+    margin-bottom: 41px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 54px;
+
+    text-transform: uppercase;
+}
+
+.carousel-list {
+    display: flex;
+    margin-left: 24px;
+    margin-right: 24px;
+    width: 9999px;
+    transition: margin-left 500ms;
+}
+
+.carousel-item {
+    position: relative;
+    display: inline-block;
+    width: 408px;
+    height: 515px;
+    background-color: var(--primary-white-color);
+}
+
+.carousel-item__photo{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 94px;
+}
+
+.card-rating {
+    display: block;
+    width: 408px;
+    height: 515px;
+
+}
+
+.card-text {
+    position: absolute;
+    width: 408px;
+    height: 515px;
+    top: 0;
+    left: 0;
+    text-align: center;
+
+    &.black {
+        background-color: var(--primary-text-color);
+    }
+
+}
+
+.card-text div {
+    justify-content: center;
+}
+
+.card-text p {
+    margin-top: 35px;
+    margin-bottom: 126px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+
+    color: var(--primary-white-color);
+}
+
+.card-text span {
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 126px;
+    color: var(--primary-white-color);
+}
+
+.card-text h3 {
+    width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    margin-bottom: 45px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 117%;
+
+    &.card-text__white {
+        color: var(--primary-white-color);
+        margin-top: 40px;
+        & p{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 117%;
+            text-transform: none;
+            margin-bottom: 20px;
+        }
+    }
+
+    &.card-text__black {
+        color: var(--primary-text-color);
+        margin-top: 298px;
+    }
+}
+
+.card-text p.card-text__rubric{
+    color: var(--primary-text-color);
+}
+
+@media screen and (max-width: 767px){
+    .carousel {
+        width: 100%;
+    }
+
+    .gallery {
+        min-width: 320px;
+        margin: 0;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        overflow-x: scroll;
+    }
+
+    .carousel svg {
+        width: 14px;
+        height: 27px;
+
+    }
+
+    .carousel-button {
+        display: none;
+    }
+
+    .carousel h2 {
+        font-size: 20px;
+        line-height: 34px;
+    }
+
+    .carousel-list {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 3000px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .carousel-item {
+        width: 320px;
+        height: 385px;
+        scroll-snap-align: start;
+    }
+
+    .card-rating {
+        width: 320px;
+        height: 385px;
+
+    }
+
+    .card-text {
+        position: absolute;
+        width: 320px;
+        height: 385px;
+        top: 0;
+        left: 0;
+        text-align: center;
+    }
+
+    .card-text p {
+        margin-bottom: 66px;
+    }
+
+    .card-text span {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+
+    .carousel {
+        width: 100%;
+        max-width: 768px;
+    }
+
+    .gallery {
+        min-width: 768px;
+        margin: 0;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        overflow-x: scroll;
+    }
+
+    .carousel svg {
+        width: 14px;
+        height: 27px;
+
+    }
+
+    .carousel-button {
+        display: none;
+    }
+
+    .carousel h2 {
+        font-size: 20px;
+        line-height: 34px;
+    }
+
+    .carousel-list {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 3000px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .carousel-item {
+        scroll-snap-align: start;
+    }
+
+    .card-text p {
+        margin-bottom: 66px;
+    }
+
+    .card-text span {
+        font-size: 50px;
+    }
+}

@@ -1,0 +1,137 @@
+.footer-logo{
+    width: 84px;
+}
+
+.footer__menu{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer__menu-item{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    text-transform: uppercase;
+}
+
+.footer__content--list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__subscribe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__subscribe-list{
+    display: flex;
+}
+
+.footer__subscribe-text{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--primary-text-color);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer__row{
+    margin-top: 20px;
+}
+
+.footer__row--text{
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    opacity: 0.5;
+}
+
+.footer__row--text p{
+    margin-bottom: 15px;
+}
+
+.footer__row--copyright{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 34px;
+    text-transform: capitalize;
+
+    color: #000000;
+}
+
+.footer__subscribe-button{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 14px;
+    color: var(--primary-white-color);
+    background: var(--primary-text-color);
+    border: none;
+    padding: 17px 40px;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__content{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .footer__menu{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 2fr 1fr;
+        gap: 10px;
+        height: 77px;
+    }
+
+    .footer__subscribe{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer__subscribe-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+        padding: 10px 0 20px 50px;
+    }
+
+    .footer__row--copyright{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .footer-logo{
+        width: 184px;
+    }
+    
+    .footer__content{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+        align-items: center;
+    }
+    
+    .footer__subscribe-list{
+        display: flex;
+    }
+    
+    .footer__row{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr ;
+        grid-gap: 2vw;
+    
+    }
+}

@@ -1,0 +1,50 @@
+.card-photo-day {
+    margin-top: 40px;
+}
+
+.card-photo-day__absolute{
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+
+.card-photo-day__link{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+
+    color: #FFFFFF;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.photo-day-img{
+    width: 300px;
+}
+
+@media screen and (min-width: 768px) {
+    .photo-day-img{
+        width: 623px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .card-photo-day__link{
+        margin-top: 260px;
+        margin-left: 15px;
+    }
+}
+
+<ul class="lang-list">
+                    <li class="lang-item">
+                        <a class="lang" href="#">
+                            UA
+                        </a>
+                    </li>
+                    <li class="lang-item">
+                        <a  href="./index.html">
+                            RU
+                        </a>
+                    </li>
+                </ul>

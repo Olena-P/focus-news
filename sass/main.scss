@@ -1,0 +1,20 @@
+@import "./base/base";
+@import "./base/_container.scss";
+
+@import "./component/header";
+@import "./component/footer";
+@import "./component/burger-menu";
+@import "./component/one-active-slide";
+@import "./component/search";
+
+@import "./layout/card-list";
+@import "./layout/banner";
+@import "./layout/subscribe";
+@import "./layout/rating";
+@import "./layout/rubrik";
+@import "./layout/banner-scroll";
+@import "./layout/ukraine";
+@import "./layout/popular";
+@import "./layout/hero";
+
+@import "./utils/variables";
