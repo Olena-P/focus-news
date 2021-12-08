@@ -1,14 +1,17 @@
+.section-rating{
+    background-color: #F4F4F4;;
+}
+
 .carousel {
     position: relative;
-    width: 1394px;
+    width: 1440px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .gallery {
-    max-width: 1224px;
+    max-width: 1272px;
     overflow: hidden;
     margin: 0 24px;
 }
@@ -16,13 +19,13 @@
 .carousel svg {
     width: 24px;
     height: 47px;
-
 }
 
 .carousel-button {
-    width: 61px;
+    width: 59px;
     border: none;
-    background-color: transparent;
+    background-color: #FFFFFF;
+
     &.prev {
         transform: matrix(-1, 0, 0, 1, 0, 0);
     }
@@ -31,6 +34,16 @@
     &:focus {
         background: rgba(6, 6, 6, 0.5);
         outline: none;
+    }
+}
+
+.popular-carousel .carousel-button {
+    &.prev {
+        margin-right: 25px;
+    }
+
+    &.next{
+        margin-left: 25px;
     }
 }
 
@@ -48,9 +61,7 @@
 
 .carousel-list {
     display: flex;
-    margin-left: 24px;
-    margin-right: 24px;
-    width: 9999px;
+    width: 100%;
     transition: margin-left 500ms;
 }
 
@@ -60,6 +71,8 @@
     width: 408px;
     height: 515px;
     background-color: var(--primary-white-color);
+
+    margin-right: 24px;
 }
 
 .carousel-item__photo{
@@ -116,7 +129,7 @@
     width: 340px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 16px;
+    margin-top: -15px;
     margin-bottom: 45px;
     font-style: normal;
     font-weight: bold;
@@ -125,7 +138,6 @@
 
     &.card-text__white {
         color: var(--primary-white-color);
-        margin-top: 40px;
         & p{
             font-style: normal;
             font-weight: bold;
@@ -138,7 +150,7 @@
 
     &.card-text__black {
         color: var(--primary-text-color);
-        margin-top: 298px;
+        margin-top: 230px;
     }
 }
 
@@ -254,11 +266,29 @@
         scroll-snap-align: start;
     }
 
+    .card-text h3 {
+        margin-top: 96px;
+
+        &.card-text__black {
+            margin-top: 290px;
+        }
+    }
+
     .card-text p {
         margin-bottom: 66px;
     }
 
     .card-text span {
         font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .card-text h3 {
+        margin-top: 40px;
+
+        &.card-text__black {
+            margin-top: 290px;
+        }
     }
 }

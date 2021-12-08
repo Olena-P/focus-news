@@ -13,6 +13,17 @@ function toggleMenu() {
     menu2.classList.add("showMenu");
     menu2CloseIcon.style.display = "block";
     menu2MenuIcon.style.display = "none";
+    if (
+      menu.classList.contains("showMenu") ||
+      searchMenu.classList.contains("search__showMenu")
+    ) {
+      menu.classList.remove("showMenu");
+      closeIcon.style.display = "none";
+      menuIcon.style.display = "block";
+      searchMenu.classList.remove("search__showMenu");
+      searchCloseIcon.style.display = "none";
+      searchMenuIcon.style.display = "block";
+    }
   }
 }
 

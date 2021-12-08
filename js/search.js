@@ -13,11 +13,18 @@ function toggleMenu() {
     searchMenu.classList.add("search__showMenu");
     searchCloseIcon.style.display = "block";
     searchMenuIcon.style.display = "none";
+    if (
+      menu.classList.contains("showMenu") ||
+      menu2.classList.contains("showMenu")
+    ) {
+      menu.classList.remove("showMenu");
+      closeIcon.style.display = "none";
+      menuIcon.style.display = "block";
+      menu2.classList.remove("showMenu");
+      menu2CloseIcon.style.display = "none";
+      menu2MenuIcon.style.display = "block";
+    }
   }
 }
 
 searchHamburger.addEventListener("click", toggleMenu);
-
-// searchMenuItems.forEach(function (menuItem) {
-//   menuItem.addEventListener("click", toggleMenu);
-// });

@@ -7,7 +7,6 @@
 .card {
     width: 300px;
     border-bottom: 1px solid var(--gray-color);
-    margin-top: 40px;
 }
 
 .card__height-small{
@@ -25,14 +24,12 @@
     align-items: center;
     background-color: var(--primary-text-color);
     width: 300px;
-    margin-top: 40px;
     padding: 28px 0;
 }
 
 .card-white{
     background-color: var(--primary-white-color);
     width: 300px;
-    margin-top: 40px;
 }
 
 .card__preview{
@@ -51,7 +48,7 @@
 
 .card__quotes{
     display: flex;
-    text-align: center;
+    justify-content: center;
     margin-top: 72px;
     margin-bottom: 20px;
 }
@@ -181,6 +178,20 @@
     opacity: 0.5;
 }
 
-.reclame{
-    margin-top: 40px;
+@media screen and (max-width: 767px) {
+    .list__item {
+        margin-top: 40px;
+    }
+    .list__item:first-child {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+    .list__item {
+        margin-top: 0px;
+    }
+    .list__item:nth-child(n+3) {
+        margin-top: 40px;
+    }
 }
