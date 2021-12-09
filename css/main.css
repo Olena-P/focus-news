@@ -1598,11 +1598,12 @@ article {
 .gallery-hero .item-hugger__title {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 20px;
   font-size: 14px;
   color: white;
   transition: all 150ms linear;
   margin: 5px;
+  width: 250px;
 }
 
 .gallery-hero .content {
@@ -1758,6 +1759,12 @@ article {
     color: #FFFFFF;
     margin-left: 10px;
     text-shadow: var(--primary-text-color) 5px 0 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .white-box {
+    height: 466px;
   }
 }
 
