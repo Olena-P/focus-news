@@ -1441,7 +1441,7 @@ article {
 
 .popular-carousel {
   display: flex;
-  width: 1390px;
+  width: 1440px;
   margin: 0 auto;
 }
 
@@ -1662,7 +1662,7 @@ article {
 }
 
 .white-box {
-  height: 466px;
+  height: 500px;
   background: black;
 }
 
